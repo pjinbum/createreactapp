@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.5;
+  background-color: blueviolet;
+}
+
+.divdiv {
+  animation-name: tora;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.divdiv:hover {
+  animation-play-state: paused;
+  color: #fff;
+
+}
+
+@keyframes tora {
+  from {
+    left: 1px;
+  }
+  to {
+    transform: translateX(500px);
+    left: 500px;
+  }
+}
